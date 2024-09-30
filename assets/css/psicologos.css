@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 100px;
+    margin-bottom: 20px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.333% - 20px);
+    background-color: #EBD4C9;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+    
+}
+
+.image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #D8C2B7;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C49197;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+
+.intro {
+    text-align: justify; /* Justifica o texto */
+    margin: 30px 470px; /* Espaçamento acima e abaixo */
+
+}
+
+.intro h1 {
+    font-size: 2em; /* Tamanho do título */
+    color: #C49197; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.intro p {
+    font-size: 1.3em; /* Tamanho do parágrafo */
+    color: #333; /* Cor do texto */
+    margin: 0; /* Remove margens automáticas */
+}
+
+a{
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a mesma cor do texto pai */
+
+}

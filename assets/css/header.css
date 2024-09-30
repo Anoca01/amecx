@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.headerr {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #EBD4C9;
+    font-family: Arial, sans-serif;
+    padding: 10px 20px; /* Adiciona um pouco de espaço interno */
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.logoo {
+    width: 80px; /* ajuste conforme necessário */
+    cursor: pointer;
+}
+
+.navbarr {
+    display: flex; /* Alinha os itens horizontalmente */
+    flex-grow: 1; /* Permite que a navbar ocupe o espaço disponível */
+    justify-content: center; /* Centraliza os links de navegação */
+    
+}
+
+.navbarr .iconeheader {
+    color: #C49197;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative; /* Necessário para o efeito de deslizamento */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.navbarr .iconeheader::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #C49197; /* Cor da linha */
+    left: 0;
+    bottom: -5px; /* Posição da linha */
+    transform: scaleX(0); /* Inicia invisível */
+    transition: transform 0.3s; /* Suaviza o efeito */
+}
+
+.navbarr .iconeheader:hover::after {
+    transform: scaleX(1); /* Mostra a linha ao passar o mouse */
+}
+
+.log1n {
+    text-align: right;/* Para posicionar o ícone à direita, se necessário */
+}
+
+.log1n .iconeheader {
+    color: #C49197; /* Cor do ícone de login */
+    font-size: 20px;
+    position: relative; /* Necessário para o efeito de deslizamento */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.log1n .iconeheader:hover {
+    color: #C49197; /* Mudança de cor ao passar o mouse */
+}

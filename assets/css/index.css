@@ -1,0 +1,252 @@
+/* Estilo geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Mantém a tela estática */
+}/* Estilo geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 50px 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Centraliza o conteúdo */
+    position: relative; /* Para posicionar o fundo da imagem */
+}
+
+.image-background {
+    position: relative; /* Para que o círculo fique atrás da imagem */
+}
+
+.circle-background {
+    position: absolute;
+    width: 750px; /* Tamanho do círculo */
+    height: 750px; /* Tamanho do círculo */
+    border-radius: 50%; /* Círculo perfeito */
+    background-color: #D8C2B7; /* Cor forte */
+    z-index: 0; /* Fica atrás da imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.linha {
+    max-width: 100%;
+    position: relative; /* Para garantir que a imagem fique acima do círculo */
+    z-index: 1; /* Faz a imagem ficar acima do fundo */
+}
+
+.text-content {
+    max-width: 600px; /* Limita a largura do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    position: relative;
+    z-index: 2; /* Garante que o texto fique acima do fundo */
+}
+
+#saude {
+    color: #333;
+    font-size: 3.5em; /* Tamanho de fonte responsivo */
+}
+
+.saudemental {
+    font-size: 1.5em; /* Tamanho de fonte responsivo */
+    color: #C49197;
+}
+
+.texto {
+    font-size: 1.4em; /* Tamanho de fonte responsivo */
+    margin: 20px 0; /* Espaçamento em cima e embaixo */
+}
+
+.button2 {
+    color: #fff;
+    font-size: 1.5em; /* Tamanho de fonte responsivo */
+    border-radius: 30px; /* Ajuste do border-radius */
+    border: none;
+    padding: 15px 30px; /* Ajuste do padding */
+    background-color: #C49197;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+
+}
+
+.button2:hover {
+    transform: scale(1.05);
+    background-color: #A86E72; /* Cor ao passar o mouse */
+}
+
+.container3 {
+    margin-top: 45px;
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: #D8C2B7;
+    padding: 50px 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+
+}
+
+
+#pessoas {
+    font-size: 1.5em; /* Tamanho de fonte responsivo */
+    color: #333;
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Alinha a imagem e o texto em coluna em telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .linha {
+        margin-left: 0; /* Remove o espaçamento à esquerda em telas menores */
+        margin-top: 20px; /* Espaçamento acima da imagem em telas menores */
+    }
+
+    .circle-background {
+        width: 400px; /* Ajusta o tamanho do círculo para telas menores */
+        height: 400px; /* Ajusta o tamanho do círculo para telas menores */
+    }
+}
+
+
+.extras {
+    position: absolute;
+    bottom: -100px;
+    right: -90px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #EBD4C9;
+}
+
+.container {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.linha {
+    margin: 40px auto; /* Centraliza a imagem */
+    height: 400px;
+    width: 600px;
+}
+
+#saude {
+    color: #333;
+    font-size: 3.5em; /* Tamanho de fonte responsivo */
+}
+
+.saudemental {
+    font-size: 1.5em; /* Tamanho de fonte responsivo */
+    color: #C49197;
+}
+
+.texto {
+    font-size: 1.2em; /* Tamanho de fonte responsivo */
+    margin: 20px 0; /* Espaçamento em cima e embaixo */
+}
+
+.button2 {
+    color: #C49197;
+    font-size: 1.5em; /* Tamanho de fonte responsivo */
+    border-radius: 55px;
+    border: none;
+    padding: 15px 30px; /* Ajuste do padding */
+    background-color: #D8C2B7;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.button2:hover {
+    transform: scale(1.05);
+}
+
+.container3 {
+    margin-top: 45px;
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    background-color: #D8C2B7;
+    padding: 50px 350px; /* Ajusta o espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    position: relative;
+    z-index: 1;
+}
+
+#força {
+    color: #C49197;
+    font-size: 3em; /* Tamanho de fonte responsivo */
+}
+
+#pessoas {
+    font-size: 1.4em; /* Tamanho de fonte responsivo */
+    color: white;
+    margin-top: 20px; /* Espaçamento acima */
+    line-height: 1.5; /* Melhora a legibilidade */
+}
+.container4 {
+    margin-top: 45px;
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    padding: 50px 350px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 45px;
+}
+
+#equipe {
+    color:#C49197;
+    font-size: 3em; /* Tamanho de fonte responsivo */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.texto-equipe {
+    font-size: 1.2em; /* Tamanho de fonte responsivo */
+    color: #333;
+    margin-bottom: 30px; /* Espaçamento abaixo do texto introdutório */
+    line-height: 1.5; /* Melhora a legibilidade */
+}
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsivo para várias colunas */
+    gap: 20px; /* Espaçamento entre os cards */
+    
+}
+
+.equipe-card {
+    background-color: #D8C2B7; /* Cor de fundo dos cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+
+}
+
+.equipe-img {
+    width: 80px; /* Tamanho da imagem */
+    height: 80px; /* Tamanho da imagem */
+    border-radius: 50%; /* Círculo para as imagens */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+.equipe-card h4 {
+    margin: 0; /* Remove margem do título */
+    color: black; /* Cor do nome */
+}
+
+.equipe-card p {
+    font-size: 1em; /* Tamanho de fonte responsivo */
+    color: #333;
+    line-height: 1.5; /* Melhora a legibilidade */
+}

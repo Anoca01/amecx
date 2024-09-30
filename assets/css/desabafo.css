@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.bloco {
+    padding: 60px 500px;
+}
+
+.container {
+    background-color: #eeddd5;
+    padding: 40px; /* Padding para mais espaço interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+}
+
+.inicio {
+    text-align: center;
+    padding: 20px;
+    background-color: #EBD4C9;
+    color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+
+}
+
+h2 {
+    margin-top: 20px; /* Espaçamento superior para os subtítulos */
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    margin: 15px 0; /* Aumenta o espaço entre os campos */
+    padding: 15px; /* Aumenta o padding interno */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+
+}
+
+textarea {
+    height: 300px; /* Aumenta a altura do campo de desabafo */
+    resize: vertical; /* Permite que o usuário redimensione verticalmente */
+    font-family: Arial, sans-serif;
+
+}
+
+button {
+    background-color: #EBD4C9;
+    text-decoration: none; /* Remove o sublinhado */
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+
+}
+
+button:hover {
+    background-color: #D8C2B7; /* Altera a cor ao passar o mouse */
+}
+
+a{
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a mesma cor do texto pai */
+
+}

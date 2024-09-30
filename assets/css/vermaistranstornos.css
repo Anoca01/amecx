@@ -1,0 +1,94 @@
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas: 
+        "center center"
+        "causes what-is"
+        "treatment diagnosis"
+        "types types";
+    gap: 20px;
+    padding: 30px ;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    font-family: Arial, sans-serif;
+
+}
+
+.center {
+    grid-area: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    background-color: #EBD4C9;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.causes {
+    grid-area: causes;
+}
+
+.what-is {
+    grid-area: what-is;
+}
+
+.treatment {
+    grid-area: treatment;
+}
+
+.diagnosis {
+    grid-area: diagnosis;
+}
+
+.types {
+    grid-area: types;
+}
+
+.section h2 {
+    background-color: #EBD4C9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #EBD4C9;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove o sublinhado */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #D8C2B7; /* Efeito ao passar o mouse */
+}
+a{
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a mesma cor do texto pai */
+
+}
